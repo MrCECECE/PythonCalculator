@@ -1,9 +1,7 @@
 """A simple console calculator that can perform addition, subtraction, multiplication and division operations."""
 
-# Ввод данных от пользователя
 input_line = input("Enter an example: ")
 
-# Обработка данных
 action = ""
 math_symbols = ["+", "-", "*", "/"]
 numbers = [str(num) for num in range(0, 10)]
@@ -18,7 +16,6 @@ if action == "":
     exit()
 working_list = list(map(int, input_line.split(action)))
 
-# Вывод ответа
 if action == "+":
     print(f"Answer: {working_list[0] + working_list[1]}.")
 elif action == "-":
